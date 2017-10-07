@@ -31,7 +31,17 @@ public class CharacterMechanics : MonoBehaviour {
 
 	void OnControllerColliderHit (ControllerColliderHit other) {
 		print ("Controller Collision");
-		SceneManager.LoadScene (0);
+
+        if (GetComponent<ShieldUser>().shielded == true && other.gameObject.name.Contains("Cube"))
+        {
+            Destroy(other.gameObject);
+            GetComponent<ShieldUser>().shielded = false;
+        }
+        else
+        {
+            SceneManager.LoadScene(0);
+        }
+        
 	}
 
 	void OnCollisionEnter (Collision other) {

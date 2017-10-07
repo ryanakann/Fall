@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class Generator : MonoBehaviour {
 
 	public Rect playArea;
-	public float refreshHeight = 100f;
-	public float obstacleDensity = 4f;
+    public float refreshHeight = 10f;
+    public float obstacleDensity = 4f;
 
 	public Text scoreText;
 	public GameObject obstacle1;
@@ -19,28 +19,33 @@ public class Generator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        GenerateObstacles(player.transform.position.y - refreshHeight / 10);
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		scoreText.text = ((int)Mathf.Abs (player.transform.position.y / 10)-30).ToString();
+		scoreText.text = ((int)Mathf.Abs (player.transform.position.y / 10)).ToString();
 
-		//print ("Current Height: " + (int)player.transform.position.y);
-		//print ("Height mod Refresh: " + (int)Mathf.Abs(player.transform.position.y) % (int)refreshHeight);
-		if ((int)Mathf.Abs(player.transform.position.y) % (int)refreshHeight < (int)(refreshHeight / 10)) {
+        //print ("Current Height: " + (int)player.transform.position.y);
+        //print ("Height mod Refresh: " + (int)Mathf.Abs(player.transform.position.y) % (int)refreshHeight);
+        
+
+        if ((int)Mathf.Abs(player.transform.position.y) % (int)refreshHeight < (int)(refreshHeight /10)) {
 			if (newRegion == false) {
-				//print ("New Region!");
-				GenerateObstacles (player.transform.position.y - refreshHeight);
-				newRegion = true;
-			}
-		} else {
+                //print ("New Region!");
+                
+                GenerateObstacles(player.transform.position.y - refreshHeight);
+                newRegion = true;
+            }
+		}
+        else
+        {
 			newRegion = false;
 		}
 
-		if (player.transform.position.y > -refreshHeight + 100f) {
+/*		if (player.transform.position.y > -refreshHeight + 100f) {
 			player.transform.position = new Vector3 (player.transform.position.x, -refreshHeight + 100f, player.transform.position.z);
-		}
+		} */
 	}
 
 	void GenerateObstacles (float currentHeight) {
