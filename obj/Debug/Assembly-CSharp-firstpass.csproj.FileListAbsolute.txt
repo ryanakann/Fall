@@ -1,0 +1,2 @@
+C:\Users\tinak\Documents\fall-2017-fall\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\tinak\Documents\fall-2017-fall\obj\Debug\Assembly-CSharp-firstpass.csproj.CoreCompileInputs.cache
