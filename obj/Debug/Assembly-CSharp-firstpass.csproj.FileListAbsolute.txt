@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Baylor\Documents\GitHub\fall-2017-fall\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Baylor\Documents\GitHub\fall-2017-fall\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 C:\Users\Baylor\Documents\GitHub\fall-2017-fall\Temp\bin\Debug\nunit.framework.dll
@@ -30,3 +31,7 @@ C:\Users\Baylor\Documents\GitHub\fall-2017-fall\Temp\bin\Debug\UnityEngine.HoloL
 C:\Users\Baylor\Documents\GitHub\fall-2017-fall\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 C:\Users\Baylor\Documents\GitHub\fall-2017-fall\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Baylor\Documents\GitHub\fall-2017-fall\obj\Debug\Assembly-CSharp-firstpass.pdb
+=======
+C:\Users\tinak\Documents\fall-2017-fall\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+C:\Users\tinak\Documents\fall-2017-fall\obj\Debug\Assembly-CSharp-firstpass.csproj.CoreCompileInputs.cache
+>>>>>>> Tina-Jin
