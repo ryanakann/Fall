@@ -17,8 +17,11 @@ public class Generator : MonoBehaviour {
 
 	private bool newRegion = false;
 
+	private Vector3 offset;
+
 	// Use this for initialization
 	void Start () {
+		offset = new Vector3 (10f, 0f, 10f);
         GenerateObstacles(player.transform.position.y - refreshHeight / 10);
     }
 	
@@ -66,7 +69,7 @@ public class Generator : MonoBehaviour {
 				loopCounter++;
 			} while (!unique && loopCounter <= 300);
 
-			regionObjects.Add (Instantiate (obstacle1, randomPos, Quaternion.identity) as GameObject);
+			regionObjects.Add (Instantiate (obstacle1, randomPos - offset, Quaternion.identity) as GameObject);
 		}
 	}
 }
