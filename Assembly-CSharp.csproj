@@ -60,12 +60,16 @@
      <Compile Include="Assets\DontDestroyOnLoad.cs" />
      <Compile Include="Assets\Generator.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
      <Compile Include="Assets\SceneLoader.cs" />
      <Compile Include="Assets\ShieldUser.cs" />
 =======
      <Compile Include="Assets\PowerUp_ExtraLife.cs" />
      <Compile Include="Assets\PowerUp_SlowSpeed.cs" />
 >>>>>>> origin/Andrew-Abraham
+=======
+     <Compile Include="Assets\Goal.cs" />
+>>>>>>> AndrewLewis
      <None Include="Assets\Day-Night Skyboxes\readme.txt" />
      <None Include="Assets\james-fajardo\readme.txt" />
      <None Include="Assets\Day-Night Skyboxes\Textures\Readme for Assigning.txt" />
