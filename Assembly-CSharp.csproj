@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\CharacterMechanics.cs" />
      <Compile Include="Assets\CharacterMovement.cs" />
+     <Compile Include="Assets\DontDestroyOnLoad.cs" />
      <Compile Include="Assets\Generator.cs" />
      <Compile Include="Assets\ShieldUser.cs" />
      <None Include="Assets\Day-Night Skyboxes\readme.txt" />

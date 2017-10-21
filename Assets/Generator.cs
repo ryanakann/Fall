@@ -29,10 +29,6 @@ public class Generator : MonoBehaviour {
 	void Update () {
 		scoreText.text = ((int)Mathf.Abs (player.transform.position.y / 10)).ToString();
 
-        //print ("Current Height: " + (int)player.transform.position.y);
-        //print ("Height mod Refresh: " + (int)Mathf.Abs(player.transform.position.y) % (int)refreshHeight);
-        
-
         if ((int)Mathf.Abs(player.transform.position.y) % (int)refreshHeight < (int)(refreshHeight /10)) {
 			if (newRegion == false) {
                 //print ("New Region!");
