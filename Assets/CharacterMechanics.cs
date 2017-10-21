@@ -7,6 +7,7 @@ public class CharacterMechanics : MonoBehaviour {
 
 	public float terminalSpeed;
 	private Vector3 vel;
+	private float maxRange = 4f;
 	// Use this for initialization
 	void Start () {
 		//transform.position = new Vector3 (10f, 0f, 10f);
@@ -18,7 +19,7 @@ public class CharacterMechanics : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = new Vector3 (Mathf.Clamp (transform.position.x, -10f, 10f), transform.position.y, Mathf.Clamp (transform.position.z, -10f, 10f));
+		transform.position = new Vector3 (Mathf.Clamp (transform.position.x, -maxRange, maxRange), transform.position.y, Mathf.Clamp (transform.position.z, -maxRange, maxRange));
 
 		if (Mathf.Approximately(vel.magnitude,0f) && transform.position.y < -10) {
 			
