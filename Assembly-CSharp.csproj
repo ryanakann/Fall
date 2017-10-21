@@ -54,6 +54,7 @@
      <Compile Include="Assets\CharacterMechanics.cs" />
      <Compile Include="Assets\CharacterMovement.cs" />
      <Compile Include="Assets\Generator.cs" />
+     <Compile Include="Assets\Goal.cs" />
      <None Include="Assets\Day-Night Skyboxes\readme.txt" />
      <None Include="Assets\james-fajardo\readme.txt" />
      <None Include="Assets\Day-Night Skyboxes\Textures\Readme for Assigning.txt" />
