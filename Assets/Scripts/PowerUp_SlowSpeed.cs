@@ -39,6 +39,7 @@ public class PowerUp_SlowSpeed : MonoBehaviour {
 		//print (p);
 		triggered = true; //Set as activated
 		//col = p;
+		GetComponent<MeshRenderer>().enabled = false;
 
 	}
 

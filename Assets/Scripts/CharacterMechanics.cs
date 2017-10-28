@@ -23,7 +23,7 @@ public class CharacterMechanics : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.R)) {
+		if (Input.GetKeyDown (KeyCode.R) || Input.GetKeyDown(KeyCode.Escape)) {
 			SceneManager.LoadScene (0);
 		}
 		transform.position = new Vector3 (Mathf.Clamp (transform.position.x, -maxRange, maxRange), transform.position.y, Mathf.Clamp (transform.position.z, -maxRange, maxRange));
@@ -40,11 +40,10 @@ public class CharacterMechanics : MonoBehaviour {
 	void OnCollisionEnter (Collision other) {
 		if (GetComponent<ShieldUser>().shielded == true) //&& other.transform.root.tag == "Obstacle")
         {
-			Vector3 oldVel = rb.velocity;
 			Destroy(other.transform.root.gameObject);
             GetComponent<ShieldUser>().shielded = false;
-			rb.velocity = oldVel;
-			print (oldVel);
+			rb.velocity = Vector3.zero;
+			rb.AddForce (Vector3.down * 10, ForceMode.Impulse);
         }
         else
         {
