@@ -12,10 +12,10 @@ public class CharacterMechanics : MonoBehaviour {
 
 	//private bool extraLife = false;
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		//transform.position = new Vector3 (10f, 0f, 10f);
 		//print (transform.GetChild (0).transform.name);
-		transform.GetChild (0).transform.rotation.eulerAngles.Set (90f, 0f, 0f);
+		//transform.GetChild (0).transform.rotation.eulerAngles.Set (90f, 0f, 0f);
 		rb = GetComponent<Rigidbody> ();
 		rb.AddForce (Vector3.down * 5, ForceMode.Impulse);
 		//print (rb.velocity);
@@ -28,9 +28,9 @@ public class CharacterMechanics : MonoBehaviour {
 		}
 		transform.position = new Vector3 (Mathf.Clamp (transform.position.x, -maxRange, maxRange), transform.position.y, Mathf.Clamp (transform.position.z, -maxRange, maxRange));
 
-		if (Mathf.Approximately(rb.velocity.magnitude,0f) && transform.position.y < -10) {
+		//if (Mathf.Approximately(rb.velocity.magnitude,0f) && transform.position.y < -10) {
 			
-		}
+		//}
 
 		if (rb.velocity.magnitude > terminalSpeed) {
 			rb.velocity = new Vector3 (rb.velocity.x, -terminalSpeed, rb.velocity.z);
