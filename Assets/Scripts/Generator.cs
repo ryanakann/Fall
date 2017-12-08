@@ -18,16 +18,18 @@ public class Generator : MonoBehaviour {
 	private bool newRegion = false;
 
 	private Vector3 offset;
+	private Vector3 startPos;
 
 	// Use this for initialization
 	void Start () {
 		offset = new Vector3 (10f, 0f, 10f);
+		startPos = transform.position;
         GenerateObstacles(player.transform.position.y - refreshHeight / 10);
     }
 	
 	// Update is called once per frame
 	void Update () {
-		scoreText.text = ((int)Mathf.Abs (player.transform.position.y / 10)).ToString();
+		scoreText.text = (((int)(startPos.y-player.transform.position.y) / 10) + 7).ToString();
 
         if ((int)Mathf.Abs(player.transform.position.y) % (int)refreshHeight < (int)(refreshHeight /10)) {
 			if (newRegion == false) {
@@ -65,7 +67,9 @@ public class Generator : MonoBehaviour {
 				loopCounter++;
 			} while (!unique && loopCounter <= 300);
 
-			regionObjects.Add (Instantiate (obstacle1, randomPos - offset, Quaternion.identity) as GameObject);
+			GameObject newObj = Instantiate (obstacle1, randomPos - offset, Quaternion.identity) as GameObject; 
+			regionObjects.Add (newObj);
+			//newObj.transform.localScale *= (1 / 100);
 		}
 	}
 }

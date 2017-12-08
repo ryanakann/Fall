@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CinematicLevelStart.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -99,14 +98,25 @@
      <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
      <Compile Include="Assets\Scripts\CharacterMechanics.cs" />
      <Compile Include="Assets\Scripts\CharacterMovement.cs" />
+     <Compile Include="Assets\Scripts\CinematicLevelStart.cs" />
      <Compile Include="Assets\Scripts\ConstantRotation.cs" />
      <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
+     <Compile Include="Assets\Scripts\ExitGame.cs" />
      <Compile Include="Assets\Scripts\Generator.cs" />
      <Compile Include="Assets\Scripts\Goal.cs" />
+     <Compile Include="Assets\Scripts\JetPackUser.cs" />
+     <Compile Include="Assets\Scripts\LevelText.cs" />
+     <Compile Include="Assets\Scripts\PingPongPosition.cs" />
+     <Compile Include="Assets\Scripts\PlaySound.cs" />
      <Compile Include="Assets\Scripts\PowerUp_ExtraLife.cs" />
      <Compile Include="Assets\Scripts\PowerUp_SlowSpeed.cs" />
+     <Compile Include="Assets\Scripts\PowerupSound.cs" />
+     <Compile Include="Assets\Scripts\RandomPosition.cs" />
+     <Compile Include="Assets\Scripts\RandomRotScale.cs" />
+     <Compile Include="Assets\Scripts\RotatingObject.cs" />
      <Compile Include="Assets\Scripts\SceneLoader.cs" />
      <Compile Include="Assets\Scripts\ShieldUser.cs" />
+     <Compile Include="Assets\Scripts\UnparentChildren.cs" />
      <Compile Include="Assets\Scripts\WindHandler.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Day-Night Skyboxes\readme.txt" />
@@ -150,6 +160,7 @@
      <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+     <None Include="Assets\FantasyEnvironments\Environments\README.txt" />
      <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />

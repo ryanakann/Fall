@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ConstantRotation : MonoBehaviour {
 
@@ -14,5 +15,9 @@ public class ConstantRotation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		transform.Rotate (new Vector3 (0f, speed * Time.deltaTime, 0f));
+
+		if (Input.GetKeyDown (KeyCode.Escape) || Input.GetKeyDown (KeyCode.R)) {
+			SceneManager.LoadScene (0);
+		}
 	}
 }
