@@ -1,0 +1,12 @@
+﻿<Properties StartupConfiguration="{0E891518-0883-1EAE-0A8D-DEDE1555DA99}|">
+  <MonoDevelop.Ide.ItemProperties.fall-2017-fall PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\anjal\OneDrive\Documents\GitHub\fall-2017-fall\Assets\Generator.cs" line="53" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

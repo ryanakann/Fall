@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿//RandomPosition.cs
+//Ryan Kann
+//
+//Purpose: Dynamically change the intensity of wind audio based on Player speed.
+//
+//How to use: Add as Component on MainCamera.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

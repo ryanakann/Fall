@@ -1,3 +1,11 @@
+//LevelText.cs
+//Ryan Kann
+//
+//Purpose: Displays inspirational quotes at the start of each level.
+//
+//How to use: Any UI text you want to appear and disappear at level start
+//should have this Component. You don't have to do anything else.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,4 +1,21 @@
-﻿using System.Collections;
+﻿//CinematicLevelStart.cs
+//Ryan Kann
+//
+//Purpose: At the start of every level, it plays a brief cutscene wherein the
+//camera pans up and rotates around the level from finish to start, seamlessly
+//transitioning into Player controls.
+//
+//How to use: Make sure this is a component of the Main Camera (which should
+//be parented to the Player). Change the rotate speed to appropriately match
+//the level lengths. (Speeds around 28 degrees per second tend to work well.)
+//Furthermore, make sure there is a Goal GameObject at the end of the level
+//with the "Goal" tag, otherwise this script will not work. The Camera will
+//start at the Goal, and smooth damp its way up to the Player.
+//
+//TODO: Make a better system for rotation speed other than trial and error
+//hard-setting the speed.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

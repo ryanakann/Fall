@@ -8,6 +8,7 @@ public class ShieldUser : MonoBehaviour {
 
 	public PostProcessingProfile normalPP;
 	public PostProcessingProfile shieldedPP;
+	public GameObject explodeParticle;
 
 	// Use this for initialization
 	void Start () {

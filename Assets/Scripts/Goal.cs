@@ -1,4 +1,17 @@
-﻿using System.Collections;
+﻿//Goal.cs
+//Ryan Kann
+//
+//Purpose: Ensures that the Player properly transitions to the next level.
+//
+//How to use: Add as a component to any GameObject with a Collider (with Trigger
+//checked), and with the "Goal" tag. A prefab for this already exists called
+//"Goal". The only thing you have to be cogniscent of is that the "isLastLevel"
+//bool should only be checked on the last level, as it will replace the level
+//transition with a special one. Also make sure there is a UI Textbox called
+//"LastLevel" with whatever text you want it to display at the end. If you don't
+//want text at the end, you still need this, just set the text to "".
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,30 +21,12 @@ public class Goal : MonoBehaviour {
 
 	public bool isLastLevel = false;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
 	void OnTriggerEnter (Collider other) {
 		if (other.tag == "Player") {
 			//changeLevel ();
 			StartCoroutine("changeLevel");
 		}
 	}
-
-	/*void changeLevel(){
-		if (SceneManager.GetActiveScene ().buildIndex < SceneManager.sceneCountInBuildSettings - 1) {
-			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
-		} else {
-			SceneManager.LoadScene (0);
-		}
-	}*/
 
 	IEnumerator changeLevel() {
 		/*//Vector3 amount = GameObject.FindWithTag ("Player").GetComponent<Rigidbody> ().velocity / 30;

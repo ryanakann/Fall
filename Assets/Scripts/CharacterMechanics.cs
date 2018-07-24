@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿//CharacterMechanics.cs
+//Ryan Kann
+//
+//Purpose: Contains all necessary physics details of the character, including
+//gravity scale, terminal speed, and the range of allowed movement. Also
+//handles all Player collisions.
+//
+//How to use: Add this as a component to the Player GameObject and change any
+//necessary values in the Inspector window.
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -51,6 +61,7 @@ public class CharacterMechanics : MonoBehaviour {
 	void OnCollisionEnter (Collision other) {
 		if (GetComponent<ShieldUser>().shielded == true) //&& other.transform.root.tag == "Obstacle")
         {
+			GameObject boom = Instantiate (GetComponent<ShieldUser> ().explodeParticle, other.contacts [0].point + Vector3.up * rb.velocity.y / 5, Quaternion.identity) as GameObject;
 			Destroy(other.transform.root.gameObject);
             GetComponent<ShieldUser>().shielded = false;
 			GetComponent<ShieldUser>().SetShieldedProfile (false);

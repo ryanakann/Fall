@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿//RandomPosition.cs
+//Ryan Kann
+//
+//Purpose: Give any GameObject a random Rotation and Scale to add variety.
+//
+//How to use: Add as Component of any GameObject, and change the scaleRange
+//appropriately
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
